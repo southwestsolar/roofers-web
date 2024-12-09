@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 
@@ -17,7 +18,6 @@ export default function Home() {
         />
         
         <div className="relative z-20 container mx-auto px-6 h-full flex flex-col justify-center">
-          {/* <img src="/logo.svg" alt="Logo" className="w-64 mb-8" /> */}
           <h1 className="text-5xl font-bold text-white mb-6">
             Professional Roofing Services <br />in Southern California
           </h1>
@@ -25,9 +25,11 @@ export default function Home() {
             Expert roofing solutions for your home. We specialize in shingle repair, flat roofs, 
             and tile repair with a team of dedicated professionals.
           </p>
-          <button className="bg-[#f0494a] hover:bg-[#d63e3f] text-white text-lg font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105">
-            Get Your Free Quote Today
-          </button>
+          <Link href="/contact" className="inline-block">
+            <button className="bg-[#f0494a] hover:bg-[#d63e3f] text-white text-lg font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105">
+              Get Your Free Quote Today
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -124,19 +126,21 @@ export default function Home() {
 
       {/* CTA Section */}
       <div className="bg-[#f0494a] text-white py-20">
-  <div className="container mx-auto px-6 text-center">
-    <h2 className="text-4xl font-bold mb-8">Ready to Get Started?</h2>
-    <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-      Contact us today for a free consultation and quote. Our expert team is ready to help
-      with all your roofing needs.
-    </p>
-    <button className="bg-white text-[#f0494a] hover:bg-gray-100 text-lg font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105">
-      Schedule Your Free Inspection
-    </button>
-  </div>
-</div>
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold mb-8">Ready to Get Started?</h2>
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            Contact us today for a free consultation and quote. Our expert team is ready to help
+            with all your roofing needs.
+          </p>
+          <Link href="/contact" className="inline-block">
+            <button className="bg-white text-[#f0494a] hover:bg-gray-100 text-lg font-semibold px-8 py-4 rounded-lg transition-all transform hover:scale-105">
+              Schedule Your Free Inspection
+            </button>
+          </Link>
+        </div>
+      </div>
 
-    <Footer />
+      <Footer />
     </div>
   );
 }
