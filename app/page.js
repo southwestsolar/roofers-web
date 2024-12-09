@@ -35,7 +35,7 @@ export default function Home() {
       </div>
 
       {/* Services Section */}
-      <div className="py-20 bg-gray-50">
+      <div className="py-20 bg-gray-50 text-gray-900">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16">Our Roofing Services</h2>
           
@@ -77,7 +77,7 @@ export default function Home() {
       </div>
 
       {/* Why Choose Us */}
-      <div className="py-20 bg-white">
+      <div className="py-20 bg-white text-gray-900">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16">Why Choose Us</h2>
           
